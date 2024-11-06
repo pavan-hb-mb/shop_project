@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Men's Tech Shell Full-Zip-SHOP</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu_bar">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          width="40px"
+          height="20px"
+        >
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </div>
+      <a href="/home.html" class="brand">SHOP</a>
+      <a href="#" class="cart">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 576 512"
+          width="20px"
+          height="20px"
+        >
+          <path
+            d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+          />
+        </svg>
+      </a>
+    </header>
+    <nav class="navbar">
+      <ul class="navbar-items">
+        <li><a href="">Mens's Outerwear</a></li>
+        <li><a href="">Ladies Outerwear</a></li>
+        <li><a href="">Mens's T-Shirts</a></li>
+        <li><a href="">Ladies T-Shirts</a></li>
+      </ul>
+    </nav>
+    <div class="overlay hidden" id="overlay"></div>
+    <main>
+        <div class="single_item">
+            <div class="single_item_img_div">
+                <img src="https://shop.polymer-project.org/esm-bundled/data/images/10-15068B.jpg" alt="item_image" class="single_item_img" />
+            </div>
+            <div class="single_item_details">
+                <div class="single_item_heading">
+                <p class="single_item_title">
+                    Men's Tech Shell Full-Zip
+                </p>
+                <p class="single_item_price">$50.20</p>
+            </div>
+            <div class="size_quantity_container">
+              <div class="dropdown_container">
+              <label id="size" class="dropdown_label gray_color">Size</label>
+                <select id="size" class="dropdown">
+                  <option>XS</option>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                  <option>XL</option>
+                </select>
+              </div>
+              <div class="dropdown_container">
+                <label id="quantity" class="dropdown_label gray_color">Quantity</label>
+                <select id="quantity" class="dropdown">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="single_item_description">
+                <h6>Description</h6>
+                <p class="gray_color">A versatile full-zip that you can wear all day long and even to the gym. This technical shell features moisture-wicking fabric, added stretch and a hidden pocket for your smartphone or media player. </p>
+                <p class="gray_color">Features:</p>
+                <ul class="gray_color item_features">
+                    <li>100% polyester.</li>
+                    <li>Smooth, technical front with textured mesh back.</li>
+                    <li>Drawstring bottom for adjustable fit.</li>
+                    <li>Raglan sleeves.</li>
+                    <li>Raglan sleeves.</li>
+                    <li>Available in forest green with the white Google logo embroidered at left chest.</li>
+                </ul>
+              </div>
+              <a href="/cart.html"><button class="add_to_cart_btn">ADD TO CART</button></a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+      <p class="footer_text">Made by Polymer</p>
+      <button class="demo_btn">DEMO ONLY</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

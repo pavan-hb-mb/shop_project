@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Checkout-SHOP</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu_bar">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          width="40px"
+          height="20px"
+        >
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </div>
+      <a href="/home.html" class="brand">SHOP</a>
+      <a href="/cart.html" class="cart">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 576 512"
+          width="20px"
+          height="20px"
+        >
+          <path
+            d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+          />
+        </svg>
+      </a>
+    </header>
+    <nav class="navbar">
+      <ul class="navbar-items hidden" >
+        <li><a href="">Mens's Outerwear</a></li>
+        <li><a href="">Ladies Outerwear</a></li>
+        <li><a href="">Mens's T-Shirts</a></li>
+        <li><a href="">Ladies T-Shirts</a></li>
+      </ul>
+    </nav>
+    <div class="overlay hidden" id="overlay"></div>
+    <main>
+      <form class="checkout_form">
+        <header class="sub_heading">
+          <h2>Checkout</h2>
+          <p class="gray_color">
+            Shop is a demo app - form data will not be sent
+          </p>
+        </header>
+        <div class="form_container">
+          <div class="form_sub_section">
+            <h6>Account Information</h6>
+            <div class="input_container">
+                <input id="email" type="text" class="input_field" placeholder="email" />
+                <label for="email" class="input_label">Email</label>
+              <div class="input-decorator"></div>
+            </div>
+            <div class="input_container">
+              <input id="phoneNumber" type="text" class="input_field" placeholder="Phone Number" />
+              <label for="phoneNumber" class="input_label">Phone Number</label>
+              <div class="input-decorator"></div>
+            </div>
+            <h6>Shipping Address</h6>
+            <div class="input_container">
+              <input id="shipAddress" type="text" class="input_field" placeholder="Address" />
+              <label for="shipAddress" class="input_label">Address</label>
+              <div class="input-decorator"></div>
+            </div>
+            <div class="input_container">
+              <input id="shipCity" type="text" class="input_field" placeholder="City" />
+              <label for="shipCity" class="input_label">City</label>
+              <div class="input-decorator"></div>
+            </div>
+            <div class="state_zip_input">
+              <div class="input_container">
+                <input id="shipState" type="text" class="input_field" placeholder="State/Provience" />
+                <label for="shipState" class="input_label">State/Provience</label>
+                <div class="input-decorator"></div>
+              </div>
+              <div class="input_container">
+                <input id="shipZip" type="text" class="input_field" placeholder="Zip/Postal Code" />
+                <label for="shipZip" class="input_label">Zip/Postal Code</label>
+                <div class="input-decorator"></div>
+              </div>
+            </div>
+            <div class="country_dropdown_container">
+              <label>Country</label
+              ><select class="country_dropdown">
+                <option>United States</option>
+                <option>Canada</option>
+              </select>
+              <div class="input-decorator"></div>
+            </div>
+            <h6>Billing Address</h6>
+            <div class="billing_address">
+              <input type="checkbox" id="billing_address_checkbox" /><label
+                >Use different billing address</label
+              >
+            </div>
+            <div class="billing_address_container">
+                <div class="input_container">
+                <input id="billAddress" type="text" class="input_field" placeholder="Address" />
+                <label for="billAddress" class="input_label">Address</label>
+                <div class="input-decorator"></div>
+              </div>
+              <div class="input_container">
+                <input id="billCity" type="text" class="input_field" placeholder="City" />
+                <label for="billCity" class="input_label">City</label>
+                <div class="input-decorator"></div>
+              </div>
+              <div class="state_zip_input">
+                <div class="input_container">
+                  <input id="billState" type="text" class="input_field" placeholder="State/Provience" />
+                  <label for="billState" class="input_label">State/Provience</label>
+                  <div class="input-decorator"></div>
+                </div>
+                <div class="input_container">
+                  <input id="billZip" type="text" class="input_field" placeholder="Zip/Postal Code" />
+                  <label for="billZip" class="input_label">Zip/Postal Code</label>
+                  <div class="input-decorator"></div>
+                </div>
+              </div>
+              <div class="country_dropdown_container">
+                <label>Country</label
+                ><select class="country_dropdown">
+                  <option>United States</option>
+                  <option>Canada</option>
+                </select>
+                <div class="input-decorator"></div>
+              </div></div>
+          </div>
+          <div class="form_sub_section">
+            <h6>Payment Method</h6>
+            <div class="input_container">
+              <input id="cardHolderName" type="text" class="input_field" placeholder="Cardholder Name" />
+              <label for="cardHolderName" class="input_label">Cardholder Name</label>
+              <div class="input-decorator"></div>
+            </div>
+            <div class="input_container">
+              <input id="cardNumber" type="text" class="input_field" placeholder="Card Number" />
+              <label for="cardNumber" class="input_label">Card Number</label>
+              <div class="input-decorator"></div>
+            </div>
+            <div class="expiry_container">
+              <lebel>Expiry</lebel>
+              <div class="card_info">
+                <div>
+                  <select class="card_info_dropdown">
+                      <option>Jan</option>
+                      <option>Feb</option>
+                      <option>Mar</option>
+                      <option>Apr</option>
+                      <option>May</option>
+                      <option>Jun</option>
+                      <option>Jul</option>
+                      <option>Aug</option>
+                      <option>Sep</option>
+                      <option>Oct</option>
+                      <option>Nov</option>
+                      <option>Dec</option>
+                  </select>
+                  <div class="input-decorator"></div>
+                </div>
+                <div>
+                    <select class="card_info_dropdown">
+                        <option>2016</option>
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>   
+                    </select>
+                    <div class="input-decorator"></div>
+                  </div>
+                  <div class="input_container">
+                    <input id="cvv" type="text" class="input_field" placeholder="CVV" />
+                    <label for="cvv" class="input_label">CVV</label>
+                    <div class="input-decorator"></div>
+                  </div>
+              </div>
+            </div>
+          <h6>Order Summary</h6>
+          <div class="order_summary">
+            <p class="display_styling"><span>Ladies Youtube Favorite Tee</span><span>$22.20</span></p>
+            <p class="display_styling"><span>Men's Tech Shell Full-Zip</span><span>$22.20</span></p>
+            <p class="display_styling"><span>Green Flex Fleece Zip Hoodie</span><span>$22.20</span></p>
+          </div>
+          <p class="display_styling"><span>Total</span><span>$22.20</span></p>
+         <button class="place_order_btn">PLACE ORDER</button>
+        </div>
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+        <p class="footer_text">Made by Polymer</p>
+        <button class="demo_btn">DEMO ONLY</button>
+      </footer>
+      <script src="script.js">
+      </script>
+  </body>
+</html>
